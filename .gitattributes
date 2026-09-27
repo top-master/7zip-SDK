@@ -1,0 +1,33 @@
+
+#
+# Firstly, ensures everything goes through common text-encoding detection, and
+# that every text's line ending shall be automatically set
+# (i.e. `crlf` in Windows, and `lf` for MacOS and Linux).
+#
+* text=auto
+
+# Ensures to never modify line endings of our console-scripts
+# (while ensuring is tracked line by line instead of "binary").
+#
+*.bat     text eol=crlf
+*.cmd     text eol=crlf
+*.sh      text eol=lf
+
+# Visual-Studio Project config.
+*.dsp     text eol=crlf
+*.dsw     text eol=crlf
+
+# Windows resources.
+*.rc      text eol=lf
+
+# Finally, ensures below things don't get mistaken with text, and
+# that even if by chance their binary matches a common text-encoding.
+#
+*.dat     binary
+*.dll     binary
+*.exe     binary
+
+# Image formats.
+*.ico     binary
+*.png     binary
+*.ppm     binary

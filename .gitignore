@@ -1,0 +1,161 @@
+
+# --- Personal ---
+/todo/
+
+# ====================================================================
+# OS & Platform-Specific Files
+# ====================================================================
+
+# --- macOS ---
+*.app                  # macOS application bundle directories
+*.dylib                # macOS dynamic shared libraries
+.DS_Store              # macOS custom folder attributes
+
+# ====================================================================
+# IDEs & Code Editors
+# ====================================================================
+
+# --- Eclipse ---
+.metadata
+
+# --- Emacs / XEmacs ---
+*.*#
+*~
+*.flc
+.#*
+
+# --- IntelliJ IDEA ---
+/.idea/
+
+# --- Qt Creator ---
+*~*.TMP
+*.pro.user*
+*.qmlproject.user*
+qtc-debugging-helper
+qtc-qmldbg
+qtc-qmldump
+
+# --- Vim ---
+*.swp
+.*.swp
+
+# --- Visual Studio ---
+*vcproj.*.*.user
+*.appxmanifest
+*.exe.embed.manifest
+*.exe_manifest.rc
+*.exe_manifest.res
+*.ib_pdb_index
+*.idb
+*.ilk
+*.ncb
+*.pdb
+*.sln
+*.suo
+*.vcproj
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+.qmake.winrt_uuid_*
+
+# --- Xcode (macOS IDE) ---
+*.mode1
+*.mode1v3
+*.pbxuser
+
+# ====================================================================
+# Build & Output Directories
+# ====================================================================
+
+# --- General Build Directories ---
+debug
+release
+tmp
+tmp-debug
+tmp-debug-shared
+tmp-release
+tmp-release-shared
+
+# --- INTEGRITY RTOS Build Directory ---
+work
+
+# ====================================================================
+# Compiled File Artifacts
+# ====================================================================
+
+# --- Precompiled Headers ---
+*_pch.h.cpp
+.pch
+
+# --- Object Files & Libraries ---
+*.a                    # Unix static libraries
+*.core                 # Crash core dumps
+*.d                    # Dependency files
+*.la                   # Libtool archives
+*.o                    # Unix object files
+*.obj                  # Windows object files
+*.so                   # Linux dynamic shared libraries
+*.so.*                 # Linux versioned shared libraries
+
+# ====================================================================
+# Frameworks & Toolchains
+# ====================================================================
+
+# --- Qt & QMake (Generated Files) ---
+*_plugin_import.cpp
+*.debug
+*.moc
+*.prl
+*.version
+*.version.in
+.device.vars
+.qmake.cache
+.qmake.stash
+.qmake.vars
+.rcc                   # Qt Resource compiler output
+# LZMA-SDK uses hand-crafted makefile(s), else would uncomment: 
+#
+# Makefile*
+#
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# --- Qt & QMake (Generated Directories/Modules) ---
+mkspecs/modules-inst/
+mkspecs/modules/qt_*.pri
+mkspecs/modules/static/qt_*.pri
+
+# --- MinGW Generated Files ---
+*.Debug
+*.Release
+
+# --- Green Hills INTEGRITY RTOS ---
+*.ael
+*.dep
+*.dla
+*.dnm
+*.gpj
+*.int
+*.map
+
+# --- Code Coverage & Profiling ---
+*.gcda                 # Gcov data files
+*.gcno                 # Gcov notes files
+*.gcov                 # Gcov output
+callgrind.out.*        # Valgrind/Callgrind profiling data
+
+# ====================================================================
+# Patches & Miscellaneous
+# ====================================================================
+
+# --- Patching & Version Control ---
+*.orig                 # Unmodified backup files from patch/merge
+*.rej                  # Rejected patch hunks
+.pc/                   # Quilt patch directory
+
+# --- AI Assistants ---
+.claude/
+
+# --- App Specific / Custom ---
+pcviewer.cfg
